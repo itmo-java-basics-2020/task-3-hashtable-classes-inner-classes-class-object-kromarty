@@ -43,10 +43,6 @@ public class HashTable {
         this(size, 0.5);
     }
 
-    public HashTable() {
-        this(1024, 0.5);
-    }
-
     private int HashFunc(Object key) {
         return Math.abs(key.hashCode());
     }
